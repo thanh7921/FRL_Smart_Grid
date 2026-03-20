@@ -1,7 +1,21 @@
 [project]
 name = "frl-smartgrid"
 version = "0.1.0"
-description = "Add your description here"
+description = "Enviroment for running simulating and training for the FRL Smart Grid project"
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = []
+requires-python = ">=3.10"
+dependencies = [
+  "citylearn>=2.5.0",
+  "setuptools<82",
+  "stable-baselines3>=2.3.2",
+  "tensorboard>=2.20.0",
+]
+
+[dependency-groups]
+dev = [
+  "black>=26.3.1",
+  "jupyterlab>=4.5.6",
+  "jupyterlab-code-formatter>=3.0.3",
+  "jupyterlab-lsp>=5.2.0",
+  "python-lsp-server[all]>=1.14.0",
+]
